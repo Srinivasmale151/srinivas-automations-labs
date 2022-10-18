@@ -1,0 +1,12 @@
+Feature: Verify dropdown functionality
+
+Scenario Outline: verify login into fit factory application
+
+Given user visit the fit factory application
+When user enter "<username>" and "<password>" into login text fields
+And user click on sign in button
+Then User logged fit factory application successfully.
+
+Examples:
+| username | password |
+| demo     | kD6eD0rY |

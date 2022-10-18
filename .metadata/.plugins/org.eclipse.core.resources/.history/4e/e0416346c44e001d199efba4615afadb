@@ -1,0 +1,34 @@
+package com.stepdefinitions;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.PageFactory;
+
+import com.pages.LoginPage;
+
+import co.basepage.BasePage;
+import io.cucumber.java.en.Given;
+
+public class LoginStepDefinitions extends BasePage {
+
+	
+	
+	
+	@Given("User visit the fit factory application")
+	public void user_visit_the_fit_factory_application() {
+	    driver = initializeDriver();
+	    driver.get("https://test.fitfactory.com/Login");
+	}
+
+	@Given("User enter {string} and {string}")
+	public void user_enter_and(String username, String password) {
+		LoginPage login =new LoginPage(driver);
+		login.enterEmailID(username);
+		login.enterPassword(password);
+	   
+	}
+
+	@Given("User click on sign in button")
+	public void user_click_on_sign_in_button() {
+	    
+	}
+}

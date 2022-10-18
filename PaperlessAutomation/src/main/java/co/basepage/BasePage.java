@@ -1,0 +1,47 @@
+package co.basepage;
+
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.util.Properties;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+import com.pages.LoginPage;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
+ 
+public class BasePage {
+
+	public WebDriver driver;
+	public Properties prop=null;
+	public FileInputStream fis=null;
+	public String filePath="";
+	public LoginPage lp;
+	public WebDriver initializeDriver()
+	{
+		WebDriverManager.chromedriver().setup();
+		driver = new ChromeDriver();
+		driver.manage().window().maximize();
+		return driver;
+		
+	}
+	
+	
+	public Properties readProperties() throws IOException
+	{
+		
+		try {
+			prop =new Properties();
+			fis =new FileInputStream(
+					System.getProperty("user.dir")+"\\src\\main\\java\\com\\config\\config.properties");
+			prop.load(fis);
+		} catch (FileNotFoundException e) {
+			
+			e.printStackTrace();
+		}
+		return prop;
+		
+	}
+}

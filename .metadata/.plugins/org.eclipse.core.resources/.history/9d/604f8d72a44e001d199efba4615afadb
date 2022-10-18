@@ -1,0 +1,8 @@
+Feature: login functionality
+
+Scenario:
+Given User visit the fit factory application
+And User enter "Username" and "Password"
+And User click on sign in button
+Then User logged into fit factory home page successfully.
+ 

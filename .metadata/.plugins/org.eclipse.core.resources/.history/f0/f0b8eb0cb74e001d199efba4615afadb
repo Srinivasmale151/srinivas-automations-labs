@@ -1,0 +1,11 @@
+package co.basepage;
+
+public class Capital {
+
+	public static void main(String[] args) {
+		
+		String str ="4th Floor, Plot no: 38, Survey no. 64, Siddiq Nagar, Phase II, Hitech city, Madhapur- 500081.";
+		str = str.toUpperCase();
+		System.out.println(str);
+	}
+}

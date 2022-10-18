@@ -1,0 +1,22 @@
+package com.stepdefinitions;
+
+import io.cucumber.java.en.Given;
+
+public class LoginStepDefinitions {
+
+	
+	@Given("User visit the fit factory application")
+	public void user_visit_the_fit_factory_application() {
+	    
+	}
+
+	@Given("User enter {string} and {string}")
+	public void user_enter_and(String string, String string2) {
+	   
+	}
+
+	@Given("User click on sign in button")
+	public void user_click_on_sign_in_button() {
+	    
+	}
+}
