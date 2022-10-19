@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <launchConfiguration type="cucumber.eclipse.launching.localCucumberFeature">
-    <stringAttribute key="cucumber feature" value="C:/Users/Lenovo/InterviewWorkspace/Srinivas_Testing_Automation_Labs/src/main/resources/com/feature/Login.feature"/>
+    <stringAttribute key="cucumber feature" value="C:/Users/Lenovo/srinivas automations labs/PaperlessAutomation/src/main/resources/com/feature/login.feature"/>
     <stringAttribute key="glue path" value="classpath:"/>
     <booleanAttribute key="is html formatter?" value="false"/>
     <booleanAttribute key="is json formatter?" value="false"/>
@@ -10,6 +10,12 @@
     <booleanAttribute key="is progress formatter?" value="false"/>
     <booleanAttribute key="is rerun formatter" value="false"/>
     <booleanAttribute key="is usage formatter" value="false"/>
-    <stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="Srinivas_Testing_Automation_Labs"/>
+    <listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
+        <listEntry value="/PaperlessAutomation"/>
+    </listAttribute>
+    <listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
+        <listEntry value="4"/>
+    </listAttribute>
+    <stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="PaperlessAutomation"/>
     <booleanAttribute key="pde.generated.config" value="true"/>
 </launchConfiguration>

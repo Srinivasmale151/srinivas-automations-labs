@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TestRunner (1)" project="PaperlessAutomation" tests="1" started="1" failures="0" errors="1" ignored="0">
+  <testsuite name="com.runner.TestRunner" time="22.284">
+    <testsuite name="login functionality" time="22.284">
+      <testcase name="login with username and password" classname="login functionality" time="22.284">
+        <error>java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.findElement(org.openqa.selenium.By)" because "this.driver" is null&#13;
+	at com.pages.LoginPage.Webelements(LoginPage.java:68)&#13;
+	at com.pages.LoginPage.sendKeys(LoginPage.java:57)&#13;
+	at com.stepdefinitions.LoginStepDefinitions.user_enter_and(LoginStepDefinitions.java:32)&#13;
+	at ✽.User enter "Admin" and "admin123"(file:///C:/Users/Lenovo/srinivas%20automations%20labs/PaperlessAutomation/src/main/resources/feature/login.feature:5)&#13;
+&#13;
+</error>
+      </testcase>
+    </testsuite>
+  </testsuite>
+</testrun>

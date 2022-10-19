@@ -1,0 +1,4 @@
+com\pages\LoginPage.class
+co\basepage\Capital.class
+co\basepage\BasePage.class
+com\logger\LoggerHelper.class

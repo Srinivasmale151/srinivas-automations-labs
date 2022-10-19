@@ -1,0 +1,91 @@
+package com.pages;
+
+import java.util.HashMap;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.How;
+import org.openqa.selenium.support.PageFactory;
+
+public class LoginPage {
+
+	public WebDriver driver;
+	
+	public LoginPage(WebDriver driver) {
+		PageFactory.initElements(driver, this);
+	}
+	
+	
+	@FindBy(xpath =  "//input[@placeholder='Username']")
+	WebElement email;
+	
+	@FindBy(xpath="//input[@placeholder='Password']")
+	WebElement password;
+	
+	@FindBy(xpath  = "//button[@type='submit']")
+	WebElement signIn;
+	
+	@FindBy(how = How.XPATH, using = "//input[@placeholder='Username']")
+	public WebElement Username;
+	
+	@FindBy(how = How.XPATH, using = "//input[@placeholder='Password']")
+	public WebElement Password;
+	
+	@FindBy(how = How.XPATH, using = "//button[@type='submit']")
+	public WebElement LoginBtn;
+	
+	
+	public static String  getDetails(String key)
+	{
+		HashMap<String, String> map =new HashMap<>();
+		map.put("email", "//input[@placeholder='Username']");
+		map.put("pass", "//input[@placeholder='Password']");
+		map.put("loginBtn", "//button[@type='submit']");
+		return map.get(key);
+						
+	}
+	
+	public WebElement Webelements(String xpaString)
+	{
+		return driver.findElement(By.xpath(xpaString));
+		
+	}
+	public void Login(String username, String password)
+	{
+		Username.sendKeys(username);
+		Password.sendKeys(password);
+	}
+	
+	public void ClickLogin()
+	{
+		LoginBtn.click();
+	}
+	
+	
+	
+	
+	
+	public void enterEmailID(String username)
+	{
+		email.sendKeys(username);
+	}
+	
+	public void enterPassword(String pass)
+	{
+		password.sendKeys(pass);
+	}
+	
+	public void signInClick()
+	{
+		signIn.click();
+	}
+	
+	public String getPageTitle()
+	{
+		return driver.getTitle();
+		
+	}
+}

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TestRunner (1)" project="PaperlessAutomation" tests="1" started="1" failures="0" errors="0" ignored="0">
+  <testsuite name="com.runner.TestRunner" time="15.283">
+    <testsuite name="login functionality" time="15.283">
+      <testcase name="login with username and password" classname="login functionality" time="15.283"/>
+    </testsuite>
+  </testsuite>
+</testrun>

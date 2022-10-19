@@ -1,0 +1,10 @@
+package com.testrunner;
+
+import io.cucumber.junit.CucumberOptions;
+
+@CucumberOptions(
+		features = "C:\\Users\\Lenovo\\srinivas automations labs\\PaperlessAutomation\\src\\main\\resources\\com\\feature\\login.feature",
+		glue = "com.stepdefinitions")
+public class TestRunner {
+
+}
